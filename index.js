@@ -2,7 +2,7 @@ const express = require("express");
 const mongo = require("mongodb");
 const urlcomp = require("./app/urlcomp")
 
-const url = "mongodb://localhost:27017/urlbase" || "mongodb://" + process.env.DBUSR + ":" + process.env.DBPW + "@" + process.env.DB_URI;
+const url = "mongodb://" + process.env.DBUSR + ":" + process.env.DBPW + "@" + process.env.DB_URI;
 console.log("Connected to DB: " + url)
 const client = mongo.MongoClient;
 
