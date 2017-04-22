@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URL Shortening Microservice</title>
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+            
+            h1 {
+                font-weight: bold;
+            }
+            div strong {
+                color: indianred;
+            }
+            code{
+                background: lightsteelgrey;
+            }
+            code a {
+                text-decoration: none;
+                color: #000;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Welcome to URL Shortening Microservice</h1>
+        <h2>To create a new shortened URL:</h2>
+        <div>Please append a valid URL to the address of this page, followed by <strong>"/new/"</strong></div>
+        <h2>To follow a shortened URL created previously:</h2>
+        <div>Append the shortened URL to the page address followed by a forward slash</div>
+        </br>
+        <h2>Example use:</h2>
+        <code><a href="https://urlcomp.herokuapp.com/new/http://freecodecamp.com">https://urlcomp.herokuapp.com/new/http://freecodecamp.com</a></code>
+        <h3>produces the following shortened URL:</h3>
+        <code>
+            {
+                "urlExt": "c02fc4",
+                "targetURL": "http://freecodecamp.com"
+            }            
+        </code>
+        <h3>and</h3>
+        <code><a href ="https://urlcomp.herokuapp.com/c02fc4">https://urlcomp.herokuapp.com/c02fc4</a></code>
+        <h3>redirects to <a href="http://freecodecamp.com" target = "_blank">http://www.freecodecamp.com</a></h3>
+        
+    </body>
+</html>
