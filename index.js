@@ -3,7 +3,6 @@ const mongo = require("mongodb");
 const urlcomp = require("./app/urlcomp")
 
 const url = "mongodb://" + process.env.DBUSR + ":" + process.env.DBPW + "@" + process.env.DB_URI;
-console.log("Connected to DB: " + url)
 const client = mongo.MongoClient;
 
 client.connect(url, function(err, db) {
